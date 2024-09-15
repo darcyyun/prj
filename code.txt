@@ -1,0 +1,625 @@
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "完成"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add 1.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "完成"
+[master (root-commit) 531ac0c] 完成
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 531ac0c57257c8ee31f3059f2b523575473574d1 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 09:58:55 2024 +0800
+
+    完成
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "1111111"
+[master df4c070] 1111111
+ 1 file changed, 1 insertion(+)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit df4c0707d36b26d006db32c58aa6e4be9c58bd3f (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:14:24 2024 +0800
+
+    1111111
+
+commit 531ac0c57257c8ee31f3059f2b523575473574d1
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 09:58:55 2024 +0800
+
+    完成
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "2222222"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "2222222"
+[master 2397724] 2222222
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 2397724edc99d37fdd017fbdf0a7b3be24655d0a (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:00 2024 +0800
+
+    2222222
+
+commit df4c0707d36b26d006db32c58aa6e4be9c58bd3f
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:14:24 2024 +0800
+
+    1111111
+
+commit 531ac0c57257c8ee31f3059f2b523575473574d1
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 09:58:55 2024 +0800
+
+    完成
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git all .
+git: 'all' is not a git command. See 'git --help'.
+
+The most similar command is
+        pull
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "3333333"
+[master e2b595c] 3333333
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit e2b595cfacc7511dcf2df3b6c9d859e086a000e8 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:49 2024 +0800
+
+    3333333
+
+commit 2397724edc99d37fdd017fbdf0a7b3be24655d0a
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:00 2024 +0800
+
+    2222222
+
+commit df4c0707d36b26d006db32c58aa6e4be9c58bd3f
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:14:24 2024 +0800
+
+    1111111
+
+commit 531ac0c57257c8ee31f3059f2b523575473574d1
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 09:58:55 2024 +0800
+
+    完成
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "444"
+[master e03de65] 444
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+    444
+
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+    444
+
+commit e2b595cfacc7511dcf2df3b6c9d859e086a000e8
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:49 2024 +0800
+
+    3333333
+
+commit 2397724edc99d37fdd017fbdf0a7b3be24655d0a
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:00 2024 +0800
+
+    2222222
+
+commit df4c0707d36b26d006db32c58aa6e4be9c58bd3f
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:14:24 2024 +0800
+
+    1111111
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git reset --hard HEAD^
+HEAD is now at e2b595c 3333333
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git reflog
+e2b595c (HEAD -> master) HEAD@{0}: reset: moving to HEAD^
+e03de65 HEAD@{1}: commit: 444
+e2b595c (HEAD -> master) HEAD@{2}: commit: 3333333
+2397724 HEAD@{3}: commit: 2222222
+df4c070 HEAD@{4}: commit: 1111111
+531ac0c HEAD@{5}: commit (initial): 完成
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git reset --hard e03de65
+HEAD is now at e03de65 444
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+    444
+
+commit e2b595cfacc7511dcf2df3b6c9d859e086a000e8
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:49 2024 +0800
+
+    3333333
+
+commit 2397724edc99d37fdd017fbdf0a7b3be24655d0a
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:00 2024 +0800
+
+    2222222
+
+commit df4c0707d36b26d006db32c58aa6e4be9c58bd3f
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:14:24 2024 +0800
+
+    1111111
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "2添加"
+
+[master 61d78d2] 2添加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 2.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 61d78d2069b96aec49e9bb5f36c9042e239724e7 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:38:31 2024 +0800
+
+    2添加
+
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+    444
+
+commit e2b595cfacc7511dcf2df3b6c9d859e086a000e8
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:49 2024 +0800
+
+    3333333
+
+commit 2397724edc99d37fdd017fbdf0a7b3be24655d0a
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:00 2024 +0800
+
+    2222222
+
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "2-add-111"
+On branch master
+nothing to commit, working tree clean
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 61d78d2069b96aec49e9bb5f36c9042e239724e7 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:38:31 2024 +0800
+
+    2添加
+
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+    444
+
+commit e2b595cfacc7511dcf2df3b6c9d859e086a000e8
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:49 2024 +0800
+
+    3333333
+
+commit 2397724edc99d37fdd017fbdf0a7b3be24655d0a
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:00 2024 +0800
+
+    2222222
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "2-add-111"
+[master d88e07f] 2-add-111
+ 1 file changed, 3 insertions(+)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+    2-add-111
+
+commit 61d78d2069b96aec49e9bb5f36c9042e239724e7
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:38:31 2024 +0800
+
+    2添加
+
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+    444
+
+commit e2b595cfacc7511dcf2df3b6c9d859e086a000e8
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:16:49 2024 +0800
+
+    3333333
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git revert HEAD
+[master 508e922] Revert "2-add-111",回到2添加版本
+ 1 file changed, 3 deletions(-)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 508e922a07bfb3f622d902aa9330f1b6cb6b42a9 (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:41:48 2024 +0800
+
+    Revert "2-add-111",回到2添加版本
+
+    This reverts commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4.
+
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+    2-add-111
+
+commit 61d78d2069b96aec49e9bb5f36c9042e239724e7
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:38:31 2024 +0800
+
+    2添加
+
+commit e03de6550d98fc8f00ff2b6e8cada233ac56b7b2
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:18:22 2024 +0800
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "2.txt功能完成"
+[master 78cf180] 2.txt功能完成
+ 1 file changed, 3 insertions(+)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 78cf1805aea6bccf4ebca8af7aac83df08be723e (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:53:53 2024 +0800
+
+    2.txt功能完成
+
+commit 508e922a07bfb3f622d902aa9330f1b6cb6b42a9
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:41:48 2024 +0800
+
+    Revert "2-add-111",回到2添加版本
+
+    This reverts commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4.
+
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+    2-add-111
+
+commit 61d78d2069b96aec49e9bb5f36c9042e239724e7
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:38:31 2024 +0800
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch
+* master
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch darcyyun
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch
+  darcyyun
+* master
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git checkout darcyyun
+Switched to branch 'darcyyun'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (darcyyun)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (darcyyun)
+$ git commit -m "3.txt添加"
+[darcyyun a609d52] 3.txt添加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 3.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (darcyyun)
+$ git log
+commit a609d5270a9e29571d2bf53fedf9365d9822022f (HEAD -> darcyyun)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:57:46 2024 +0800
+
+    3.txt添加
+
+commit 78cf1805aea6bccf4ebca8af7aac83df08be723e (master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:53:53 2024 +0800
+
+    2.txt功能完成
+
+commit 508e922a07bfb3f622d902aa9330f1b6cb6b42a9
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:41:48 2024 +0800
+
+    Revert "2-add-111",回到2添加版本
+
+    This reverts commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4.
+
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (darcyyun)
+$ git checkout master
+Switched to branch 'master'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit 78cf1805aea6bccf4ebca8af7aac83df08be723e (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:53:53 2024 +0800
+
+    2.txt功能完成
+
+commit 508e922a07bfb3f622d902aa9330f1b6cb6b42a9
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:41:48 2024 +0800
+
+    Revert "2-add-111",回到2添加版本
+
+    This reverts commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4.
+
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+    2-add-111
+
+commit 61d78d2069b96aec49e9bb5f36c9042e239724e7
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:38:31 2024 +0800
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git checkout darcyyun
+Switched to branch 'darcyyun'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (darcyyun)
+$ git log
+commit a609d5270a9e29571d2bf53fedf9365d9822022f (HEAD -> darcyyun)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:57:46 2024 +0800
+
+    3.txt添加
+
+commit 78cf1805aea6bccf4ebca8af7aac83df08be723e (master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:53:53 2024 +0800
+
+    2.txt功能完成
+
+commit 508e922a07bfb3f622d902aa9330f1b6cb6b42a9
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:41:48 2024 +0800
+
+    Revert "2-add-111",回到2添加版本
+
+    This reverts commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4.
+
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (darcyyun)
+$ git checkout master
+Switched to branch 'master'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git merge darcyyun
+Updating 78cf180..a609d52
+Fast-forward
+ 3.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 3.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch
+  darcyyun
+* master
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch -d darcyyun
+Deleted branch darcyyun (was a609d52).
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch
+* master
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git log
+commit a609d5270a9e29571d2bf53fedf9365d9822022f (HEAD -> master)
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:57:46 2024 +0800
+
+    3.txt添加
+
+commit 78cf1805aea6bccf4ebca8af7aac83df08be723e
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:53:53 2024 +0800
+
+    2.txt功能完成
+
+commit 508e922a07bfb3f622d902aa9330f1b6cb6b42a9
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:41:48 2024 +0800
+
+    Revert "2-add-111",回到2添加版本
+
+    This reverts commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4.
+
+commit d88e07fa75a52bcbf0a5c19dc3a550447899edf4
+Author: darcyyun <darcyyun@qq.com>
+Date:   Sun Sep 15 10:40:29 2024 +0800
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "add until.js"
+[master 8c3ee0e] add until.js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 untiljs.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch -a
+* master
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git branch login
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git checkout login
+Switched to branch 'login'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (login)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (login)
+$ git commit -m "login-1"
+[login a328bfb] login-1
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (login)
+$ git checkout master
+Switched to branch 'master'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git checkout login
+Switched to branch 'login'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (login)
+$ git checkout master
+Switched to branch 'master'
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git add .
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git commit -m "fix bug"
+[master fb276b8] fix bug
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
+$ git merge login
+Auto-merging untiljs.txt
+CONFLICT (content): Merge conflict in untiljs.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master|MERGING)
+$ git add untiljs.txt
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master|MERGING)
+$ git commit -m "冲突解决"
+[master 7150200] 冲突解决
+
+darcyyun@LAPTOP-K7P2M32D MINGW64 /e/gitclass/code (master)
